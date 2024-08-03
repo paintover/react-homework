@@ -1,0 +1,53 @@
+body {
+  --background-color: #f0efef;
+
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+}
+
+/* MenuItem 컴포넌트 */
+.MenuItemList {
+  --karly-color : #5F0080;
+  --hover-background-color: #E1E1E1;
+  --default-font-size: 16px;
+  --default-font-weight: 500;
+  --default-line-height: 24px;
+
+  background-color: #fff;
+  width: max-content; /*너비를 자식요소가 필요한 만큼만 제한*/
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+  
+
+  li {
+    width: 247px;
+    padding: 8px 0px 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: inherit;
+    }
+  }
+
+  li span {
+    font-size: var(--default-font-size);
+    font-weight: var(--default-font-weight);
+    line-height: var(--default-line-height); /* 150% */
+  }
+
+  li:hover{
+    color: var(--karly-color);
+    background-color: var(--hover-background-color);
+    }
+  }
