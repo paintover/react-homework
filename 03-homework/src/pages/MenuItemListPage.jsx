@@ -1,4 +1,13 @@
 import MenuItem from '@/components/MenuItem'
+import { arrayOf, exact, string, number } from 'prop-types';
+
+const ItemType = exact({
+  id: string.isRequired,
+  photo: string.isRequired,
+  name: string.isRequired,
+  size: number 
+})
+
 
 function MenuItemListPage(props) {
   const itemList = [...props.list];
@@ -21,3 +30,8 @@ function MenuItemListPage(props) {
 }
 
 export default MenuItemListPage;
+
+// MenuItemListPage 속성 검사 (list)
+MenuItemListPage.propTypes = {
+ list: arrayOf(ItemType).isRequired,
+}
