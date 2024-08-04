@@ -10,7 +10,7 @@
 - itemsData : id, name, photo로 구성된 객체로 이루어진 메뉴 아이템 관련 배열 데이터
 <br>
 <br>
-* MenuItemListPage 컴포넌트 : 앞선 itemsData 데이터를 list로 받는 컴포넌트  
+- MenuItemListPage 컴포넌트 : 앞선 itemsData 데이터를 list로 받는 컴포넌트    
   * map 메서드로 itemList의 item을 순환하여 item의 네가지 속성에 따른 ```<li>```를 반환한다. 
 
 ``` jsx
