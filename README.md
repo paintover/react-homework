@@ -11,7 +11,7 @@
 <br>
 <br>
 - MenuItemListPage 컴포넌트 : 앞선 itemsData 데이터를 list로 받는 컴포넌트    
-  * map 메서드로 itemList의 item을 순환하여 item의 네가지 속성에 따른 ```<li>```를 반환한다. 
+  * map 메서드로 itemList의 item을 순환하여 item의 네가지 속성에 따른 ```<li/>```를 반환한다. 
 
 ``` jsx
 function MenuItemListPage(props) {
